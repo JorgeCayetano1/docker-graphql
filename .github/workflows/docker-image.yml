@@ -27,11 +27,11 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker buildx build -t jorgecayetano1/docker-graphql:0.0.1
+        docker build -t jorgecayetano1/docker-graphql:0.0.1 .
 
     - name: Push Docker image
       run: |
-        docker buildx push jorgecayetano1/docker-graphql:0.0.1
+        docker push jorgecayetano1/docker-graphql:0.0.1 .
       
 #    - name: Build the Docker image
 #      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
