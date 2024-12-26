@@ -28,7 +28,7 @@ jobs:
     - name: Build Docker image
       run: |
         docker build -t jorgecayetano1/docker-graphql:0.0.1 .
-        docker build -t jorgecayetano1/docker-graphql:0.0.1:latest .
+        docker build -t jorgecayetano1/docker-graphql:latest .
 
     - name: Push Docker image
       run: |
